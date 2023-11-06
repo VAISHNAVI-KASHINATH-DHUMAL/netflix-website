@@ -7,6 +7,8 @@
     <title>Netflix Website</title>
     <!-- Add CSS -->
     <link rel="stylesheet" href="./CSS/login.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -18,14 +20,16 @@
     <!--Form-->
     <div class="form-wrapper">
         <h2>Sign In</h2>
-        <form action="#">
+        <form id="loginForm">
             <div class="form-control">
-                <input type="text" required>
+                <input id="email" name="email" type="text" autocomplete="off" required>
                 <label for="email">Email or phone number</label>
+                <div id="errorMessages" style="color: red;"></div>
             </div>
             <div class="form-control">
-                <input type="password" required>
+                <input id="password" name="password" type="password" autocomplete="off" required>
                 <label for="password">Password</label>
+                <div id="errorMessages" style="color: red;"></div>    
             </div>
             <button type="submit"><a href="./HTML/home.html">Sign In</a></button>
             <div class="form-help">
@@ -36,12 +40,13 @@
                 <a href="#">Need help?</a>
             </div>
         </form>
-        <p>New to Netflix? <a href="#">Sign In</a></p>
+        <p>New to Netflix? <a href="#">Sign Up</a></p>
         <small>
             This page is protected by Google reCAPTCHA to ensure you're
             <a href="#">Learn More.</a>
         </small>
     </div>
+    <script src="./JS/login.js"></script>
 </body>
 
 </html>

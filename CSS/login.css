@@ -158,6 +158,10 @@
    text-decoration: underline;
  }
 
+ .form-control input:focus {
+  outline: 0;
+}
+
  @media (max-width: 740px) {
    body::before {
      display: none;
